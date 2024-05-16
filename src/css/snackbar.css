@@ -1,35 +1,90 @@
-/* Reset styles */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+.form {
+  margin-top: 50px;
+  margin-left: 70px;
 }
 
-/* p:last-child {
-  margin-bottom: 0;
+.form > label {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  color: #2e2f42;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  width: 360px;
+  height: 72px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.form > label > input {
+  display: flex;
+  width: 360px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2e2f42;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
 }
 
-a {
-  color: currentColor;
-  text-decoration: none;
+.form > label > input:hover {
+  border: 1px solid #000;
 }
 
-button {
-  cursor: pointer;
+.form > label > input:active,
+.form > label > input:focus {
+  border: 1px solid #4e75ff;
+}
+.form > fieldset {
+  display: flex;
+  width: 360px;
+  height: 64px;
+  margin-top: 30px;
+  align-items: center;
+  text-align: justify;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding-right: 2px;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
+.form > fieldset > label {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 4px;
+  margin-right: 48px;
+  margin-left: 48px;
+}
+
+.form > fieldset:hover {
+  border: 1px solid #000;
+}
+
+.form > button {
+  display: flex;
+  width: 376px;
+  height: 40px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  margin-top: 24px;
+  border-color: transparent;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.form > button:hover {
+  background: #6c8cff;
+}
